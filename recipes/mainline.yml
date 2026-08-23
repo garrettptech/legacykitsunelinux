@@ -18,14 +18,10 @@ modules:
         destination: / # copies files/system/ into your image's root folder.
 
   - type: dnf
-    repos:
-      copr:
-        - atim/starship
     install:
       packages:
         - kitty
         - micro
-        - starship
         - docker
         - fish
         - fastfetch
