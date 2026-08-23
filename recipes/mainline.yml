@@ -44,6 +44,7 @@ modules:
   - type: os-release
     properties:
       ID: kitsunelinux
+      ID_Like: fedora
       NAME: KitsuneLinux
       PRETTY_NAME: Kitsune Linux (Fedora Based)
 
