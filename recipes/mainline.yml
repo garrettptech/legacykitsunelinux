@@ -23,17 +23,14 @@ modules:
         - atim/starship
     install:
       packages:
+        - kitty
         - micro
         - starship
-        - kitty
         - docker
         - fish
         - fastfetch
         - git
         - brightnessctl
-    remove:
-      packages:
-        - konsole
 
   - type: default-flatpaks
     configurations:
@@ -43,6 +40,7 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - it.mijorus.gearlever
       - scope: user # Also add Flathub user repo, but no user packages
+
   - type: os-release
     properties:
       ID: kitsunelinux

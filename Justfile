@@ -1,8 +1,14 @@
-generate $target_image=image_name:
-    bluebuild generate ./recipes/${target_image} -o Containerfile
+default:
+    @just --list
 
-build $target_image=image_name:
-    bluebuild build ./recipes/${target_image}.yml
+generate IMAGE:
+    #!/usr/bin/env bash
+    sudo bluebuild generate ./recipes/{{IMAGE}} -o Containerfile
 
-switch $target_image=image_name:
-    bluebuild switch ./recipes/${target_image}.yml
+build IMAGE:
+    #!/usr/bin/env bash
+    sudo bluebuild build ./recipes/{{IMAGE}}.yml
+
+switch IMAGE:
+    #!/usr/bin/env bash
+    sudo bluebuild switch ./recipes/{{IMAGE}}.yml
