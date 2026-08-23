@@ -17,7 +17,7 @@ modules:
       - source: system
         destination: / # copies files/system/ into your image's root folder.
 
-  - type: dnf5
+  - type: dnf
     repos:
       copr:
         - atim/starship
