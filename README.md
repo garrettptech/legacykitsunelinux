@@ -1,4 +1,4 @@
-# kitsunelinux &nbsp; [![bluebuild build badge](https://github.com/garrettptech/kitsunelinux/actions/workflows/build.yml/badge.svg)](https://github.com/garrettptech/kitsunelinux/actions/workflows/build.yml)
+# Kitsune Linux &nbsp; [![bluebuild build badge](https://github.com/garrettptech/kitsunelinux/actions/workflows/build.yml/badge.svg)](https://github.com/garrettptech/kitsunelinux/actions/workflows/build.yml)
 
 This repository is based on Universal Blue & bootc to create a immuatuble linux distro for my personal usage.
 
