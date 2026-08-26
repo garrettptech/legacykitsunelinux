@@ -1,13 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
+
 name: kitsunelinux
-# description will be included in the image's metadata
 description: immuatuble linux distro based on Universal Blue & bootc.
 
-# the base image to build on top of (FROM) and the version tag to use
+
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 44 # You can pin to a specific version of Fedora as well
+image-version: 44 
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -22,7 +21,6 @@ modules:
       packages:
         - kitty
         - micro
-        - docker
         - fish
         - fastfetch
         - git
@@ -30,7 +28,7 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: true # Send notification after install/uninstall is finished 
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
@@ -41,7 +39,7 @@ modules:
     properties:
       ID: kitsunelinux
       ID_Like: fedora
-      NAME: KitsuneLinux
+      NAME: Kitsune Linux
       PRETTY_NAME: Kitsune Linux (Fedora Based)
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

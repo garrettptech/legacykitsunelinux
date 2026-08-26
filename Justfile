@@ -3,7 +3,7 @@ default:
 
 generate IMAGE:
     #!/usr/bin/env bash
-    sudo bluebuild generate ./recipes/{{IMAGE}} -o Containerfile
+    sudo bluebuild generate ./recipes/{{IMAGE}}.yml -o Containerfile
 
 build IMAGE:
     #!/usr/bin/env bash
@@ -11,4 +11,4 @@ build IMAGE:
 
 switch IMAGE:
     #!/usr/bin/env bash
-    sudo bluebuild switch ./recipes/{{IMAGE}}.yml
+    sudo bluebuild switch ./recipes/{{IMAGE}}.yml 
