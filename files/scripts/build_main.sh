@@ -4,3 +4,8 @@
 # You should have this in every custom script, to ensure that your completed
 # builds actually ran successfully without any errors!
 set -oue pipefail
+
+systemctl --user enable --now dsearch
+dms greeter enable
+dms greeter sync
+dms setup
