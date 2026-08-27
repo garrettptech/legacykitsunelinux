@@ -28,7 +28,7 @@ modules:
         - fastfetch
         - git
       # desktop exp
-        - wayland
+        - wayland-utils
         - hyprland
         - dms
         - dms-greeter
