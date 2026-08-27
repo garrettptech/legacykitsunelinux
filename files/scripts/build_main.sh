@@ -5,7 +5,6 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-systemctl --user enable --now dsearch
-dms greeter enable
-dms greeter sync
-dms setup
+systemctl --global enable dsearch
+systemctl --global enable niri.service 
+systemctl --global enable dms.service
