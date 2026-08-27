@@ -18,6 +18,7 @@ modules:
     repos:
       copr:
         - ashbuk/Hyprland-Fedora
+        - avengemedia/danklinux
     install:
       packages:
       # terminal apps
@@ -28,16 +29,18 @@ modules:
         - git
       # desktop exp
         - hyprland
+        - dms
+        - dms-greeter
         - brightnessctl
 
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished 
         scope: system
-        # If no repo information is specified, Flathub will be used by default
         install: 
+        # we love app images
           - it.mijorus.gearlever
-      - scope: user # Also add Flathub user repo, but no user packages
+      - scope: user 
 
   - type: os-release
     properties:
