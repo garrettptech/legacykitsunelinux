@@ -4,11 +4,9 @@
 name: kitsunelinux
 description: immuatuble linux distro based on Universal Blue & bootc.
 
-
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: 44 
 
-# module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
   - type: files
@@ -19,12 +17,12 @@ modules:
   - type: dnf
     install:
       packages:
-        - kitty
-        - micro
-        - fish
+#        - kitty
+#        - micro
+#        - fish
         - fastfetch
-        - git
-        - brightnessctl
+#        - git
+ #       - brightnessctl
 
   - type: default-flatpaks
     configurations:
